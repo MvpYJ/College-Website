@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 />
     <title>Your College Name</title>
@@ -11,10 +11,10 @@
 <body>
     <header>
         <div class="logo">
-            <img src="../assets/Logo.png" alt="College Logo">
+            <img src="/Logo.png" alt="College Logo">
         </div>
         <div class="header-image">
-            <img src="../assets/bvc.png" alt="Header Image">
+            <img src="/bvc.png" alt="Header Image">
         </div>
         <nav>
             <ul>
@@ -32,15 +32,15 @@
     <section class="card-section">
         <div class="card">
             <h3>Card 1</h3>
-            <img src="../assets/Logo.png" alt="Image 1">
+            <img src="/Logo.png" alt="Image 1">
         </div>
         <div class="card">
             <h3>Card 2</h3>
-            <img src="../assets/Logo.png" alt="Image 2">
+            <img src="/Logo.png" alt="Image 2">
         </div>
         <div class="card">
             <h3>Card 3</h3>
-            <img src="../assets/Logo.png" alt="Image 3">
+            <img src="/Logo.png" alt="Image 3">
         </div>
     </section>
 
@@ -80,9 +80,9 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide"><img src="../assets/ITBlock.webp"></div>
-          <div class="swiper-slide"><img src="../assets/Logo.png"></div>
-          <div class="swiper-slide"><img src="../assets/bvc.png"></div>
+          <div class="swiper-slide"><img src="/ITBlock.webp"></div>
+          <div class="swiper-slide"><img src="/Logo.png"></div>
+          <div class="swiper-slide"><img src="/bvc.png"></div>
           ...
         </div>
         <!-- If we need pagination -->
@@ -142,17 +142,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="../js/script.js"></script>
-    <?php
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $message = $_POST["message"];
-    $to = "yuvrajgorak@gmail.com"; // Replace with your email
-    $subject = "New Chat Message";
-    $headers = "From: webchat@example.com\r\n";
-
-    // Send the email
-    mail($to, $subject, $message, $headers);
-}
-?>
+    <script src="/script.js"></script>
 </body>
 </html>
