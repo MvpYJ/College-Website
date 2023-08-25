@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+    <title>Your College Name</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/Logo.png" alt="College Logo">
+        </div>
+        <div class="header-image">
+            <img src="../assets/bvc.png" alt="Header Image">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header class="secondary-header">
+        <h2>Electronics department</h2>
+    </header>
+ 
+
+    <section class="card-section">
+        <div class="card">
+            <h3>Card 1</h3>
+            <img src="../assets/Logo.png" alt="Image 1">
+        </div>
+        <div class="card">
+            <h3>Card 2</h3>
+            <img src="../assets/Logo.png" alt="Image 2">
+        </div>
+        <div class="card">
+            <h3>Card 3</h3>
+            <img src="../assets/Logo.png" alt="Image 3">
+        </div>
+    </section>
+
+    <!-- ... Previous HTML content ... -->
+
+    <section class="content-section">
+        <div class="content-box">
+            <div class="section-container">
+                <div class="aim-box">
+                    <h2>Our Aim</h2>
+                    <p class="aim-paragraph">
+                        <!-- ... Aim paragraph content ... -->
+                        At our electronics department, we are committed to pushing the boundaries of innovation and excellence. With a relentless pursuit of knowledge, a dynamic curriculum, and state-of-the-art laboratories, we are dedicated to shaping the engineers of tomorrow. Our aim is to not only equip our students with the latest technological advancements but also to foster critical thinking and problem-solving skills that will set them apart in a rapidly evolving world. From hands-on projects to collaborative research initiatives, we strive to empower our students to become pioneers in the field of electronics, creating a lasting impact on industries and society as a whole.
+                    </p>
+                </div>
+                <div class="divider"></div>
+                <div class="encouragement-box">
+                    <h2>Unlock Your Potential</h2>
+                    <p class="encouragement-paragraph">
+                        <!-- ... Encouragement paragraph content ... -->
+                        Are you passionate about electronics? Seize the opportunity to explore, innovate, and create. Our electronics department provides a platform for you to turn your ideas into reality. From designing circuits to programming microcontrollers, you'll embark on a journey of discovery and skill development. Join us in shaping the future of technology and making a difference. Invest your time in electronic projects that challenge, inspire, and equip you with the skills to excel in a digital world.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-projects-section">
+        <div class="our-projects-title">Our Projects</div>
+        <!-- Your project content goes here -->
+    </section>
+
+    <div class="background-gap"></div>
+
+   <section class="container-width">
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="../assets/ITBlock.webp"></div>
+          <div class="swiper-slide"><img src="../assets/Logo.png"></div>
+          <div class="swiper-slide"><img src="../assets/bvc.png"></div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+      </div>
+    </section>
+
+    <div class="background-gap"></div>
+<!-- ... Rest of your HTML content ... -->
+
+    <!-- Rest of the content goes here -->
+
+    <div class="chatbox">
+        <div class="chat-header">
+            Chat with Us
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <!-- Messages will appear here -->
+        </div>
+        <input type="text" id="chat-input" placeholder="Type your message...">
+        <button id="send-button">Send</button>
+    </div>
+
+
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-division">
+                    <h4>About Us</h4>
+                    <p>Learn more about our college and its history.</p>
+                </div>
+                <div class="footer-division">
+                    <h4>Home</h4>
+                    <p>Visit our homepage for the latest updates.</p>
+                </div>
+                <div class="footer-division">
+                    <h4>Contact</h4>
+                    <p>Get in touch with us via email or phone.</p>
+                </div>
+            </div>
+            <div class="footer-divider"></div> <!-- Add vertical divider here -->
+            <div class="footer-right">
+                <div class="footer-social-icons">
+                    <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            &copy; 2023 Your College. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+    <?php
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $message = $_POST["message"];
+    $to = "yuvrajgorak@gmail.com"; // Replace with your email
+    $subject = "New Chat Message";
+    $headers = "From: webchat@example.com\r\n";
+
+    // Send the email
+    mail($to, $subject, $message, $headers);
+}
+?>
+</body>
+</html>
