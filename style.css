@@ -14,17 +14,19 @@ header {
 }
 
 .under-development {
-    text-align: center;
-    background-color: #f2f2f2;
-    padding: 10px 0;
-    position: relative;
+    background-color: white;
+    padding: 20px 0;
+}
+
+.scrolling-text {
     overflow: hidden;
 }
 
-.under-development p {
-    font-size: 18px;
-    white-space: nowrap;
+.scrolling-text p {
     animation: scrollText 10s linear infinite;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
 }
 
 @keyframes scrollText {
