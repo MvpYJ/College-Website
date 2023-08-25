@@ -1,3 +1,18 @@
+const scrollingText = document.getElementById("scrolling-text");
+
+function scrollText() {
+    scrollingText.style.transform = "translateX(100%)";
+    scrollingText.style.transition = "none";
+
+    setTimeout(() => {
+        scrollingText.style.transition = "transform 10s linear";
+        scrollingText.style.transform = "translateX(-100%)";
+        setTimeout(scrollText, 10000);
+    }, 100);
+}
+
+scrollText();
+
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     autoplay: {
