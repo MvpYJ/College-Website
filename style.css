@@ -16,26 +16,11 @@ header {
 .under-development {
     background-color: white;
     padding: 20px 0;
-}
-
-.scrolling-text {
     overflow: hidden;
 }
 
-.scrolling-text p {
-    animation: scrollText 10s linear infinite;
+.scrolling-text {
     white-space: nowrap;
-    margin: 0;
-    padding: 0;
-}
-
-@keyframes scrollText {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
 }
 
 /* Style for the logo */
